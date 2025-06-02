@@ -56,3 +56,24 @@ PORT 5000 : Expose a port to the outside world.
 EXPOSE  5000
 # ENV key=value : Set an environment variable in the container.
 ENV NAME World
+
+
+
+
+to build the image:
+
+docker build -t <image_name>:<tag_name> .
+ex: docker build -t java12:t1 .
+
+to run the image:
+docker run -it <image_name>:<tag_name>
+ex: docker run -it java12:t1
+
+to create rep:
+docker tag <image_name>:<tag_name> <user_name>/<image_name>:<tag_name>
+ex: docker tag java:t2 shweta1978/java12:t1
+
+to push image :
+docker push <image_name>
+
+ex: docker push shweta1978/java12:t1 
