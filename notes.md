@@ -77,3 +77,24 @@ to push image :
 docker push <image_name>
 
 ex: docker push shweta1978/java12:t1 
+
+to remove the image :
+docker rmi <image_name>
+
+to remove conatiner 
+docker rm <containerid>
+
+to remove all images AND conatiner 
+docker syatem prune -a 
+
+to see the running conatiners 
+docker ps 
+
+to see the all the conatiner (running and stoped )
+docker ps -a
+
+to create the volume 
+docker  volume create  docker5-6
+
+to attach volume 
+docker run --name database  --mount source=docker5-6,target=/app1 java:t1
