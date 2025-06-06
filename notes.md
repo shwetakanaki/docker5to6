@@ -98,3 +98,18 @@ docker  volume create  docker5-6
 
 to attach volume 
 docker run --name database  --mount source=docker5-6,target=/app1 java:t1
+
+to create the network:
+docker  network  create <network_name >
+
+to attach the network to container 
+docker run --name <conatiner_name> --network=network_name  <image_name>
+
+to update the ubuntu :
+apt-get update 
+
+to install the ping package :
+apt-get install iputils-ping -y 
+
+to call the ip : 
+ping ipaddress 
